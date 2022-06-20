@@ -29,6 +29,6 @@ public class Main {
         dog.goToStick(5);
         dog.whereIsTheDog();
 
-        Dog homelessDog = Dog.homeless(100 )
+        Dog homelessDog = Dog.homeless(100 );
     }
 }
