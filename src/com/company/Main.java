@@ -39,9 +39,11 @@ public class Main {
         duck.voice();           //поскольку наследуется от Bird с public спецификатором
         duck.takeOff();         //Bird в свою очередь наследуется от Animal, где есть public voice()
         duck.isTheBirdFlying();
+        duck.showSpeed();
+
         duck.landing();
         duck.isTheBirdFlying();
-
+        duck.showSpeed();
 
     }
 }
