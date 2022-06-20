@@ -4,6 +4,7 @@ package com.company;
 //import com.company.L002.POJO;
 //import com.company.L003.Cat;
 
+import com.company.L013.SwitchExample;
 import com.company.animals.Cat;
 import com.company.animals.Dog;
 import com.company.animals.Duck;
@@ -77,6 +78,9 @@ public class Main {
         while (IndexLinkedList < dogsLinkedList.size()) {
             System.out.println(dogsLinkedList.get(IndexLinkedList));
             IndexLinkedList++;
+        }
+        for (int i = 0; i < 100; i++) {
+            SwitchExample.run();
         }
     }
 }
