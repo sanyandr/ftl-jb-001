@@ -2,7 +2,8 @@ package com.company.animals;
 
 import java.lang.reflect.Constructor;
 
-public class Animal {
+class Animal {
+    protected boolean canFly = false;
     protected String name;
     protected Integer weight;
     protected Integer CurrentPosition = 0;
