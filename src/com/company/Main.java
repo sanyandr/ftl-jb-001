@@ -41,6 +41,7 @@ public class Main {
         duck.isTheBirdFlying();
         duck.landing();
         duck.isTheBirdFlying();
-        Dog homelessDog = Dog.homeless(100 );
+
+
     }
 }
