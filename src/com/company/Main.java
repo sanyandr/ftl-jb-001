@@ -9,10 +9,7 @@ import com.company.animals.Cat;
 import com.company.animals.Dog;
 import com.company.animals.Duck;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -64,7 +61,8 @@ public class Main {
         System.out.println(dogsHomeless.size());
         for (Dog dogItem : dogsHomeless){
             System.out.println(dogItem);
-
+            dogItem.setName(String.valueOf((new Random()).nextLong()));
+            System.out.println(dogItem.getName());
         }
 
         List<Dog> dogsLinkedList = new LinkedList<>();
@@ -80,7 +78,7 @@ public class Main {
             IndexLinkedList++;
         }
         for (int i = 0; i < 100; i++) {
-            SwitchExample.run();
+            //SwitchExample.run();
         }
     }
 }
