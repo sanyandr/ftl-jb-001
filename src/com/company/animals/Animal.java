@@ -3,18 +3,18 @@ package com.company.animals;
 import java.lang.reflect.Constructor;
 
 class Animal {
-    protected boolean canFly = false;
+    protected MoveType moveType;
     protected String name;
     protected Integer weight;
     protected Integer CurrentPosition = 0;
-    public Animal(String name, Integer weight) {
+    public Animal(String name, Integer weight, MoveType moveType) {
         this.name = name;
         this.weight = weight;
-        this.canFly = false;
+        this.moveType = moveType;
     }
 
-    public Animal() {
-        this.canFly = false;
+    public Animal(MoveType moveType) {
+        this.moveType = moveType;
     }
 
     public void voice() {
@@ -25,12 +25,12 @@ class Animal {
         this.CurrentPosition += length;
     }
 
-    public boolean isCanFly() {
-        return canFly;
+    public MoveType getMoveType() {
+        return moveType;
     }
 
-    public void setCanFly(boolean canFly) {
-        this.canFly = canFly;
+    public void setMoveType(MoveType moveType) {
+        this.moveType = moveType;
     }
 
     public String getName() {

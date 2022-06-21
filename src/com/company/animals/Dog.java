@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Dog extends Animal {
     public Dog(String name, Integer weight) {
-        super(name, weight);
+        super(name, weight, MoveType.WALK);
     }
 
     public Dog() {
-        super();
-        this.canFly = false;
+        super(MoveType.WALK);
+        this.moveType = MoveType.WALK;
     }
 
     public static List<Dog> randomArray() {
