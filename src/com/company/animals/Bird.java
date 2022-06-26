@@ -1,6 +1,6 @@
 package com.company.animals;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements Flight{
     protected Boolean flyModeActive = false;
 
     public Bird() {
@@ -8,12 +8,14 @@ public class Bird extends Animal {
         this.moveType = MoveType.FLY;
     }
 
-    public final void takeOff() {
-        flyModeActive = true;
+    @Override
+    public void takeOff() {
+        this.flyModeActive = true;
     }
 
-     public final void landing() {
-        flyModeActive = false;
+    @Override
+    public void landing() {
+        this.flyModeActive = false;
     }
 
     public void isTheBirdFlying () {
