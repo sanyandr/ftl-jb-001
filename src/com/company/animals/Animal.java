@@ -2,7 +2,7 @@ package com.company.animals;
 
 import java.lang.reflect.Constructor;
 
-class Animal {
+abstract class Animal {
     protected MoveType moveType;
     protected String name;
     protected Integer weight;
@@ -17,9 +17,7 @@ class Animal {
         this.moveType = moveType;
     }
 
-    public void voice() {
-        System.out.println("Voice");
-    }
+    public abstract void voice();
 
     protected void runForward(Integer length) {
         this.CurrentPosition += length;
