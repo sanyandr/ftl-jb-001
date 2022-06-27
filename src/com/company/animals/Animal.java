@@ -2,12 +2,48 @@ package com.company.animals;
 
 import java.lang.reflect.Constructor;
 
-abstract class Animal {
+public abstract class Animal {
+    public static class AnimalWeight{
+        public enum weightType {
+            KG, GR
+        }
+        private Integer value;
+        private weightType weightType;
+
+        public AnimalWeight(Integer value, AnimalWeight.weightType weightType) {
+            this.value = value;
+            this.weightType = weightType;
+        }
+
+        @Override
+        public String toString() {
+            return "AnimalWeight{" +
+                    "value=" + value +
+                    ", weightType=" + weightType +
+                    '}';
+        }
+
+        public Integer getValue() {
+            return value;
+        }
+
+        public void setValue(Integer value) {
+            this.value = value;
+        }
+
+        public AnimalWeight.weightType getWeightType() {
+            return weightType;
+        }
+
+        public void setWeightType(AnimalWeight.weightType weightType) {
+            this.weightType = weightType;
+        }
+    }
     protected MoveType moveType;
     protected String name;
-    protected Integer weight;
+    protected AnimalWeight weight;
     protected Integer CurrentPosition = 0;
-    public Animal(String name, Integer weight, MoveType moveType) {
+    public Animal(String name, AnimalWeight weight, MoveType moveType) {
         this.name = name;
         this.weight = weight;
         this.moveType = moveType;
@@ -39,11 +75,11 @@ abstract class Animal {
         this.name = name;
     }
 
-    public Integer getWeight() {
+    public AnimalWeight getWeight() {
         return weight;
     }
 
-    public void setWeight(Integer weight) {
+    public void setWeight(AnimalWeight weight) {
         this.weight = weight;
     }
 
