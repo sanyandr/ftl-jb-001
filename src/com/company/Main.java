@@ -12,7 +12,7 @@ import com.company.animals.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Animal.WeightException {
 //        HelloWorld.run();
 //        POJO.run();
 //
@@ -89,5 +89,12 @@ public class Main {
         }
 
         TypeConversion.run();
+
+        dog.setWeight(new Animal.AnimalWeight(10, Animal.AnimalWeight.weightType.KG));
+        try {
+            dog.getWeight().setValue(-10);
+        }
+        catch (Animal.WeightException ignore) {
+        }
     }
 }

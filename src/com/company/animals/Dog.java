@@ -15,11 +15,16 @@ public class Dog extends Animal {
 
     public static List<Dog> randomArray() {
         List<Dog> dogs = new ArrayList<>();
-        dogs.add(Dog.of("Sharik", new AnimalWeight(1, AnimalWeight.weightType.KG)));
-        dogs.add(Dog.of("Bubble", new AnimalWeight(3, AnimalWeight.weightType.KG)));
-        dogs.add(Dog.of("Tuzic", new AnimalWeight(5, AnimalWeight.weightType.KG)));
-
+        try {
+            dogs.add(Dog.of("Sharik", new AnimalWeight(-1, AnimalWeight.weightType.KG)));
+            dogs.add(Dog.of("Bubble", new AnimalWeight(3, AnimalWeight.weightType.KG)));
+            dogs.add(Dog.of("Tuzic", new AnimalWeight(5, AnimalWeight.weightType.KG)));
+        }
+        catch (WeightException e) {
+            e.printStackTrace();
+        }
         return dogs;
+
     }
     /**
      * Идем до палки, определяем дельту между тек позицией и палкой, чтобы дойти до нее.
