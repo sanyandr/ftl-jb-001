@@ -9,6 +9,7 @@ import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
 import com.company.L026.FileExample;
 import com.company.L027.ThreadExample;
+import com.company.L028.House;
 import com.company.animals.*;
 
 import java.io.File;
@@ -28,7 +29,7 @@ public class Main {
         Cat cat = new Cat("Barsik", new Animal.AnimalWeight(20, Animal.AnimalWeight.weightType.KG));
         System.out.println(cat.jumpHeight());
 
-        
+
         Dog dog = new Dog();
         dog.goToStick(14);
         dog.whereIsTheDog();
@@ -39,7 +40,7 @@ public class Main {
 
         dog.voice();
 
-        Dog homelessDog = Dog.homeless(new Animal.AnimalWeight(100, Animal.AnimalWeight.weightType.KG) );
+        Dog homelessDog = Dog.homeless(new Animal.AnimalWeight(100, Animal.AnimalWeight.weightType.KG));
         homelessDog.voice();
 
         Duck duck = new Duck(); //Duck может вызывать методы isTheBirdFlying(), takeOff(), landing()
@@ -57,13 +58,13 @@ public class Main {
             System.out.println(dogs.get(i));
         }
 
-        List<Dog> dogsHomeless = Arrays.asList(new Dog[]  {
+        List<Dog> dogsHomeless = Arrays.asList(new Dog[]{
                 Dog.homeless(new Animal.AnimalWeight(3, Animal.AnimalWeight.weightType.KG)),
                 Dog.homeless(new Animal.AnimalWeight(3, Animal.AnimalWeight.weightType.KG)),
                 Dog.homeless(new Animal.AnimalWeight(3, Animal.AnimalWeight.weightType.KG))
         });
         System.out.println(dogsHomeless.size());
-        for (Dog dogItem : dogsHomeless){
+        for (Dog dogItem : dogsHomeless) {
             System.out.println(dogItem);
             dogItem.setName(String.valueOf((new Random()).nextLong()));
             System.out.println(dogItem.getName());
@@ -97,11 +98,22 @@ public class Main {
         dog.setWeight(new Animal.AnimalWeight(10, Animal.AnimalWeight.weightType.KG));
         try {
             dog.getWeight().setValue(-10);
-        }
-        catch (Animal.WeightException ignore) {
+        } catch (Animal.WeightException ignore) {
         }
 
         FileExample.run();
-        ThreadExample.run();
+
+        House house = new House.Builder()
+                .optHasSwimmingPool(true)
+                .build();
+        System.out.println(house.toString());
+
+        House houseFull = new House.Builder()
+                .optHasGarage(true)
+                .optHasGarden(true)
+                .optHasSwimmingPool(true)
+                .optHasFancyStatues(true)
+                .build();
+        System.out.println(houseFull.toString());
     }
 }
