@@ -7,12 +7,15 @@ package com.company;
 import com.company.L013.SwitchExample;
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
+import com.company.L026.FileExample;
 import com.company.animals.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws Animal.WeightException {
+    public static void main(String[] args) throws IOException {
 //        HelloWorld.run();
 //        POJO.run();
 //
@@ -96,5 +99,7 @@ public class Main {
         }
         catch (Animal.WeightException ignore) {
         }
+
+        FileExample.run();
     }
 }
