@@ -6,6 +6,6 @@ import com.company.T001.OutputNumbers;
 public class Main {
     public static void main(String[] args) {
         OutputNumbers.run();
-        System.out.println("\n");
+        System.out.println("\n ");
     }
 }
