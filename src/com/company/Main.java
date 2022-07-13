@@ -1,9 +1,10 @@
 package com.company;
 
-//import com.company.L001.HelloWorld;
-//import com.company.L002.POJO;
-//import com.company.L003.Cat;
-
+import com.company.L001.HelloWorld;
+import com.company.T001.OutputNumbers;
+import com.company.L001.HelloWorld;
+import com.company.L002.POJO;
+import com.company.L003.Cat;
 import com.company.L013.SwitchExample;
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
@@ -115,5 +116,8 @@ public class Main {
                 .optHasFancyStatues(true)
                 .build();
         System.out.println(houseFull.toString());
+        
+        OutputNumbers.run();
+        System.out.println("\n ");
     }
 }
