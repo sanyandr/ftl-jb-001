@@ -10,6 +10,7 @@ import com.company.T004.SumTillUserNumber;
 import com.company.T005.SequenceOutput;
 import com.company.T006.PowerOfTwo;
 import com.company.T007.StarsMatrix;
+import com.company.T008.Fibonacci;
 import com.company.animals.*;
 
 import java.io.IOException;
@@ -136,6 +137,9 @@ public class Main {
         System.out.println("\n ");
         System.out.println("TASK007");
         StarsMatrix.run();
+        System.out.println("\n ");
+        System.out.println("TASK008");
+        Fibonacci.run();
         System.out.println("\n ");
     }
 }
