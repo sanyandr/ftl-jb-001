@@ -7,6 +7,7 @@ import com.company.L026.FileExample;
 import com.company.L028.House;
 import com.company.T003.TableOfMultiplication;
 import com.company.T004.SumTillUserNumber;
+import com.company.T005.SequenceOutput;
 import com.company.animals.*;
 
 import java.io.IOException;
@@ -123,7 +124,10 @@ public class Main {
         TableOfMultiplication.run();
         System.out.println("\n ");
         System.out.println("TASK004");
-        SumTillUserNumber.run();
+        //SumTillUserNumber.run();
+        System.out.println("\n ");
+        System.out.println("TASK005");
+        SequenceOutput.run();
         System.out.println("\n ");
     }
 }
