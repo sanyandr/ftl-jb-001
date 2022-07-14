@@ -1,21 +1,14 @@
 package com.company;
 
-import com.company.L001.HelloWorld;
 import com.company.T001.OutputNumbers;
 import com.company.T002.OutputAnotherNumbers;
-import com.company.L001.HelloWorld;
-import com.company.L002.POJO;
-import com.company.L003.Cat;
-import com.company.L013.SwitchExample;
-import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
 import com.company.L026.FileExample;
-import com.company.L027.ThreadExample;
 import com.company.L028.House;
 import com.company.T003.TableOfMultiplication;
+import com.company.T004.SumTillUserNumber;
 import com.company.animals.*;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
@@ -128,6 +121,9 @@ public class Main {
         System.out.println("\n ");
         System.out.println("TASK003");
         TableOfMultiplication.run();
+        System.out.println("\n ");
+        System.out.println("TASK004");
+        SumTillUserNumber.run();
         System.out.println("\n ");
     }
 }
