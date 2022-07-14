@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.L001.HelloWorld;
 import com.company.T001.OutputNumbers;
+import com.company.T002.OutputAnotherNumbers;
 import com.company.L001.HelloWorld;
 import com.company.L002.POJO;
 import com.company.L003.Cat;
@@ -27,8 +28,8 @@ public class Main {
 //
 //        com.company.L004.Cat catL004 = new com.company.L004.Cat();
 //        catL004.voice();
-        Cat cat = new Cat("Barsik", new Animal.AnimalWeight(20, Animal.AnimalWeight.weightType.KG));
-        System.out.println(cat.jumpHeight());
+//        Cat cat = new Cat("Barsik", new Animal.AnimalWeight(20, Animal.AnimalWeight.weightType.KG));
+//        System.out.println(cat.jumpHeight());
 
 
         Dog dog = new Dog();
@@ -117,7 +118,13 @@ public class Main {
                 .build();
         System.out.println(houseFull.toString());
         
+        System.out.println("========TASKS========");
+        System.out.println("TASK001");
         OutputNumbers.run();
         System.out.println("\n ");
+        System.out.println("TASK002");
+        OutputAnotherNumbers.run();
+        System.out.println("\n ");
+
     }
 }
