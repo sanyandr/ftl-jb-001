@@ -12,6 +12,7 @@ import com.company.L020.TypeConversion;
 import com.company.L026.FileExample;
 import com.company.L027.ThreadExample;
 import com.company.L028.House;
+import com.company.T003.TableOfMultiplication;
 import com.company.animals.*;
 
 import java.io.File;
@@ -125,6 +126,8 @@ public class Main {
         System.out.println("TASK002");
         OutputAnotherNumbers.run();
         System.out.println("\n ");
-
+        System.out.println("TASK003");
+        TableOfMultiplication.run();
+        System.out.println("\n ");
     }
 }
