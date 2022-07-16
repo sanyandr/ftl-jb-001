@@ -27,7 +27,10 @@ public class Mystery {
                     }
                 }
             }
-            else System.out.println("Attempts are over, good bye!");
+            else {
+                System.out.println("Attempts are over, good bye!");
+                break;
+            }
         }
     }
 }
