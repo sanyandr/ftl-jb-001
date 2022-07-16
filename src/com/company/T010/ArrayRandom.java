@@ -9,10 +9,10 @@ public class ArrayRandom {
         int N = 5;
         Double[] taskArray = new Double[N];
         Random r = new Random();
-        for (int i = 0; i < N-1; i++) {
+        for (int i = 0; i < N; i++) {
             taskArray[i] = r.nextDouble();
         }
-        for (int i = 0; i < N-1; i++) {
+        for (int i = 0; i < N; i++) {
             System.out.print(taskArray[i] + " ");
         }
         Double max = -1.0;

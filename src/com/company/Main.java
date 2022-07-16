@@ -13,6 +13,7 @@ import com.company.T007.StarsMatrix;
 import com.company.T008.Fibonacci;
 import com.company.T009.Mystery;
 import com.company.T010.ArrayRandom;
+import com.company.T011.BubbleSort;
 import com.company.animals.*;
 
 import java.io.IOException;
@@ -144,10 +145,13 @@ public class Main {
         Fibonacci.run();
         System.out.println("\n ");
         System.out.println("TASK009");
-        Mystery.run();
+        //Mystery.run();
         System.out.println("\n ");
         System.out.println("TASK010");
         ArrayRandom.run();
+        System.out.println("\n ");
+        System.out.println("TASK011");
+        BubbleSort.run();
         System.out.println("\n ");
     }
 }
