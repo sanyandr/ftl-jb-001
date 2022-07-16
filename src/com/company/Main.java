@@ -14,6 +14,7 @@ import com.company.T008.Fibonacci;
 import com.company.T009.Mystery;
 import com.company.T010.ArrayRandom;
 import com.company.T011.BubbleSort;
+import com.company.T012.SimpleNumbers;
 import com.company.animals.*;
 
 import java.io.IOException;
@@ -152,6 +153,9 @@ public class Main {
         System.out.println("\n ");
         System.out.println("TASK011");
         BubbleSort.run();
+        System.out.println("\n ");
+        System.out.println("TASK012");
+        SimpleNumbers.run();
         System.out.println("\n ");
     }
 }
